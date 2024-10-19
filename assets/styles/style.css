@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Onest';
+    src: url('../fonts/Onest.ttf');
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Onest", sans-serif;
+}
+
+body {
+    background-color: #F7E1D7;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #FF6F61;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr; 
+    grid-template-areas: 
+        "sidebar products"
+        "sidebar products"; 
+    gap: 20px;
+    padding: 20px;
+    flex: 1;
+}
+
+.sidebar {
+    background-color: #FF6F61;
+    color: white;
+    padding: 20px;
+    width: 250px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+    cursor: pointer;
+}
+
+.sidebar ul li:hover {
+    background-color: #de2d1d;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 1;
+}
+
+.product {
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    border-radius: 5px;
+    width: calc(33.333% - 20px);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.product h3 {
+    margin: 10px;
+}
+
+.product p {
+    margin: 5px 0;
+}
+
+.footer {
+    background-color: #de2d1d;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+}
+
+.footer p {
+    margin: 0;
+    margin: 10px;
+}
+
+button {
+    background-color: #de2d1d;
+    border: none;
+    color: #ffffff;
+    padding: 15px 100px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Onest", sans-serif;
+    font-size: 17px;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 15px;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #790d03;
+}
